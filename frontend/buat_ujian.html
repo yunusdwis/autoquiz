@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <meta name="description" content=""/>
+  <meta name="author" content=""/>
+  <title>Dashtreme - Multipurpose Bootstrap4 Admin Template</title>
+  <!--favicon-->
+  <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+  <!-- simplebar CSS-->
+  <link href="/assets/plugins/simplebar/css/simplebar.css" rel="stylesheet"/>
+  <!-- Bootstrap core CSS-->
+  <link href="/assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- animate CSS-->
+  <link href="/assets/css/animate.css" rel="stylesheet" type="text/css"/>
+  <!-- Icons CSS-->
+  <link href="/assets/css/icons.css" rel="stylesheet" type="text/css"/>
+  <!-- Horizontal menu CSS-->
+  <link href="/assets/css/horizontal-menu.css" rel="stylesheet"/>
+  <!-- Custom Style-->
+  <link href="/assets/css/app-style.css" rel="stylesheet"/>
+ <!--Bootstrap Datepicker-->
+ <link href="/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css">
+ <!--Ion Range Slider-->
+ <link href="/assets/plugins/ion-rangeslider/css/ion.rangeSlider.css" rel="stylesheet" type="text/css"/>
+ <link href="/assets/plugins/ion-rangeslider/css/ion.rangeSlider.skinNice.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+
+<!-- start loader -->
+   <div id="pageloader-overlay" class="visible incoming"><div class="loader-wrapper-outer"><div class="loader-wrapper-inner" ><div class="loader"></div></div></div></div>
+   <!-- end loader -->
+
+<!-- Start wrapper-->
+ <div id="wrapper">
+
+ <!--Start topbar header-->
+<header class="topbar-nav">
+ <nav class="navbar navbar-expand">
+  <ul class="navbar-nav mr-auto align-items-center">
+    <li class="nav-item">
+      <a class="nav-link" href="javascript:void();">
+        <div class="media align-items-center">
+           <img src="/assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
+          <div class="media-body">
+            <h5 class="logo-text">AutoQuiz</h5>
+          </div>
+        </div>
+     </a>
+    </li>
+  </ul>
+     
+  <ul class="navbar-nav align-items-center right-nav-link">
+    <li class="nav-item dropdown-lg">
+      <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" data-toggle="dropdown" href="javascript:void();">
+    <i class="fa fa-bell-o"></i><span class="badge badge-info badge-up">3</span></a>
+      <div class="dropdown-menu dropdown-menu-right">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+          You have 14 Notifications
+          <span class="badge badge-info">14</span>
+          </li>
+          <li class="list-group-item">
+          <a href="javaScript:void();">
+           <div class="media">
+             <i class="zmdi zmdi-accounts fa-2x mr-3 text-info"></i>
+            <div class="media-body">
+            <h6 class="mt-0 msg-title">New Registered Users</h6>
+            <p class="msg-info">Lorem ipsum dolor sit amet...</p>
+            </div>
+          </div>
+          </a>
+          </li>
+          <li class="list-group-item">
+          <a href="javaScript:void();">
+           <div class="media">
+             <i class="zmdi zmdi-coffee fa-2x mr-3 text-warning"></i>
+            <div class="media-body">
+            <h6 class="mt-0 msg-title">New Received Orders</h6>
+            <p class="msg-info">Lorem ipsum dolor sit amet...</p>
+            </div>
+          </div>
+          </a>
+          </li>
+          <li class="list-group-item">
+          <a href="javaScript:void();">
+           <div class="media">
+             <i class="zmdi zmdi-notifications-active fa-2x mr-3 text-danger"></i>
+            <div class="media-body">
+            <h6 class="mt-0 msg-title">New Updates</h6>
+            <p class="msg-info">Lorem ipsum dolor sit amet...</p>
+            </div>
+          </div>
+          </a>
+          </li>
+          <li class="list-group-item text-center"><a href="javaScript:void();">See All Notifications</a></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</nav>
+</header>
+<!--End topbar header-->
+	
+	
+<div class="clearfix"></div>
+	
+  <div class="content-wrapper">
+    <div class="container-fluid">
+    <!-- Breadcrumb-->
+     <div class="row pt-2 pb-2">
+        <div class="col-sm-9">
+		    <h4 class="page-title">Buat Ujian</h4>
+		    <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="text-info" href="">Kelas A</a></li>
+            <li class="breadcrumb-item"><a class="text-info" href="">Ujian</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Buat</li>
+         </ol>
+	   </div>
+     </div>
+    <!-- End Breadcrumb-->
+
+    <div class="row">
+      <div class="col-lg-6 mx-auto"  id="c_form">
+         <div class="card">
+           <div class="card-body">
+           <div class="card-title text-center">Form Buat Ujian Baru</div>
+           <hr>
+           <div class="form-group">
+            <label for="input-1">Nama</label>
+            <input type="text" class="form-control" id="nama" placeholder="Input Nama Ujian" required>
+           </div>
+           <div class="form-group">
+            <label for="input-2">Tanggal</label>
+            <input type="text" id="tanggal" class="form-control" id="tanggal" placeholder="DD/MM/YYYY" required>
+           </div>
+           <div class="form-group">
+            <label for="input-1">Jumlah Soal</label>
+            <input type="number" class="form-control" id="jumlah_soal" placeholder="Input Jumlah Soal Ujian" required>
+           </div>
+           <div class="form-group">
+            <label for="input-4">Materi yang Diujikan</label>
+            <div id="materi">
+              <!-- <div class="icheck-material-info" id="c_primarya">
+                <input type="checkbox" id="primarya" checked onchange="oChangeMateri('primarya')"/>
+                <label for="primarya">Materi A</label>
+                <input class="mb_pers_materi" id="p_primarya" type="number">
+              </div>
+              <div class="icheck-material-info">
+                <input type="checkbox" id="primaryb" checked/></label>
+                <label for="primaryb">Materi B</label>
+              </div>
+              <div class="icheck-material-info">
+                <input type="checkbox" id="primaryc" checked/>
+                <label for="primaryc">Materi C</label>
+              </div>
+              <div class="icheck-material-info">
+                <input type="checkbox" id="primaryd" checked/>
+                <label for="primaryd">Materi D</label>
+              </div> -->
+            </div>
+           </div>
+           <div class="form-group">
+            <label for="input-5">Bobot Kesulitan</label>
+            <input type="text" id="bobot_kesulitan" value="" name="bobot_kesulitan"/>
+           </div>
+           <div class="form-group">
+            <label for="input-3">Deskripsi</label>
+            <textarea class="form-control" rows="4" id="deskripsi" placeholder="Input Deskripsi Ujian"></textarea>
+           </div>
+           <div class="form-group mt-5 text-right">
+            <button class="btn btn-info" onclick="preview()">Preview</button>
+          </div>
+         </div>
+         </div>
+      </div>
+
+
+      <div class="col-lg-6 mx-auto" id="c_preview">
+        <div class="card">
+          <div class="card-body">
+          <div class="card-title text-center">Preview Soal Ujian</div>
+          <hr>
+          <ol id="list_soal">
+            <li class="mb-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quam vitae iste repellendus accusantium exercitationem asperiores mollitia quas velit, culpa est tenetur libero, eum voluptatem delectus, nesciunt ratione? Perspiciatis, impedit!</li>
+            <li class="mb-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quam vitae iste repellendus accusantium exercitationem asperiores mollitia quas velit, culpa est tenetur libero, eum voluptatem delectus, nesciunt ratione? Perspiciatis, impedit!</li>
+            <li class="mb-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quam vitae iste repellendus accusantium exercitationem asperiores mollitia quas velit, culpa est tenetur libero, eum voluptatem delectus, nesciunt ratione? Perspiciatis, impedit!</li>
+            <li class="mb-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quam vitae iste repellendus accusantium exercitationem asperiores mollitia quas velit, culpa est tenetur libero, eum voluptatem delectus, nesciunt ratione? Perspiciatis, impedit!</li>
+            <li class="mb-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quam vitae iste repellendus accusantium exercitationem asperiores mollitia quas velit, culpa est tenetur libero, eum voluptatem delectus, nesciunt ratione? Perspiciatis, impedit!</li>
+            <li class="mb-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quam vitae iste repellendus accusantium exercitationem asperiores mollitia quas velit, culpa est tenetur libero, eum voluptatem delectus, nesciunt ratione? Perspiciatis, impedit!</li>
+            <li class="mb-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quam vitae iste repellendus accusantium exercitationem asperiores mollitia quas velit, culpa est tenetur libero, eum voluptatem delectus, nesciunt ratione? Perspiciatis, impedit!</li>
+            <li class="mb-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quam vitae iste repellendus accusantium exercitationem asperiores mollitia quas velit, culpa est tenetur libero, eum voluptatem delectus, nesciunt ratione? Perspiciatis, impedit!</li>
+            <li class="mb-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quam vitae iste repellendus accusantium exercitationem asperiores mollitia quas velit, culpa est tenetur libero, eum voluptatem delectus, nesciunt ratione? Perspiciatis, impedit!</li>
+            <li class="mb-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quam vitae iste repellendus accusantium exercitationem asperiores mollitia quas velit, culpa est tenetur libero, eum voluptatem delectus, nesciunt ratione? Perspiciatis, impedit!</li>
+          </ol>
+          <hr>
+          <div class="text-right">
+            <button class="btn btn-outline-info mr-2" onclick="sesuaikanUlang()">Sesuaikan Ulang</button>
+           <button class="btn btn-info" onclick="buatKuis()">Buat Kuis</button>
+         </div>
+        </div>
+        </div>
+     </div>
+    </div><!--End Row-->
+
+    </div><!-- End container-fluid-->
+   </div><!--End content-wrapper-->
+  </div><!--End wrapper-->
+
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+	
+ <!-- simplebar js -->
+  <script src="/assets/plugins/simplebar/js/simplebar.js"></script>
+  <!-- horizontal-menu js -->
+  <script src="/assets/js/horizontal-menu.js"></script>
+  
+  <!-- Custom scripts -->
+  <script src="/assets/js/app-script.js"></script>
+
+  <!--Bootstrap Datepicker Js-->
+  <script src="/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+
+  <!--Ion range Slider-->
+  <script src="/assets/plugins/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+  <script src="/assets/plugins/ion-rangeslider/js/range-slider-script.js"></script>
+
+  <!--Sweet Alerts -->
+  <script src="/assets/plugins/alerts-boxes/js/sweetalert.min.js"></script>
+  <script src="/assets/plugins/alerts-boxes/js/sweet-alert-script.js"></script>
+
+  <script>
+    $nama='';
+    $tanggal='';
+    $deskrpsi='';
+    $jumlah_soal='';
+    $materi=[];
+    $materi_selected=[];
+    $kesulitan_id='';
+
+    $('#c_preview').hide();
+
+    $('#tanggal').datepicker({
+      autoclose: true,
+      todayHighlight: true
+    });
+
+    $("#bobot_kesulitan").ionRangeSlider({
+          grid: false,
+          from: 1,
+          values: [
+              "mudah", 
+              "sedang",
+              "susah"
+          ]
+      });
+
+      $(document).ready(function(){
+        $.get("/api/materi", function(response) {
+          if(response['success']){
+            $materi=response['data'];
+            $.each(response['data'], function(index, item) {
+              $("#materi").append('<div class="icheck-material-info" id="c_'+item["id"]+'"><input type="checkbox" id="'+item["id"]+'" onchange="oChangeMateri(\''+item["id"]+'\')"/><label for="'+item["id"]+'">'+item["nama"]+'</label></div>');
+            });
+          }else{
+            console.error("Gagal melakukan permintaan ke API " + response);
+          }
+        }).fail(function() {
+          console.error("Gagal melakukan permintaan ke API");
+        });
+      });
+
+      function preview(){
+        $nama = $('#nama').val();
+        $tanggal = formatDate($('#tanggal').val());
+        $deskripsi = $('#deskripsi').val();
+        $jumlah_soal = parseInt($('#jumlah_soal').val());
+        $bobot_kesulitan = $('#bobot_kesulitan').val();
+        $ttl_persentase=0;
+        $bedge='success';
+
+        $materi_selected=[];
+        $.each($materi, function(index, item) {
+          $idCheckbox = '#'+item['id'];
+          var isChecked = $($idCheckbox).is(':checked');
+
+          if(isChecked){
+            $idPersentase = '#p_'+item['id'];
+            $persentase = parseInt($($idPersentase).val());
+            $ttl_persentase+=$persentase;
+            $materi_selected.push({ "materi_id": item['id'], "persentase": $persentase });
+          }
+        });
+
+        if($bobot_kesulitan=='mudah'){
+          $kesulitan_id=1;
+          $bedge='success';
+        }else if($bobot_kesulitan=='sedang'){
+          $kesulitan_id=2;
+          $bedge='warning';
+        }else if($bobot_kesulitan=='susah'){
+          $kesulitan_id=3;
+          $bedge='danger';
+        }
+
+        if($ttl_persentase!=100){
+          alert('total persentase materi harus 100%');
+        }else{
+          var postData = {
+            "jumlah_soal": $jumlah_soal,
+            "kesulitan_id": $kesulitan_id,
+            "materi": $materi_selected
+          };
+
+          console.log(postData);
+
+          $.ajax({
+            url: '/api/soal/generate-random',
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify(postData),
+            success: function(response) {
+              $('#list_soal').html('');
+              $.each(response, function(index, item) {
+                $('#list_soal').append('<li class="mb-2">'+item['isi']+' <span class="badge badge-pill badge-'+$bedge+' m-1">'+item['kesulitan']+'</span> <span class="badge badge-pill badge-dark m-1">'+item['materi']+'</span></li>');
+              });
+
+              $('#c_form').hide();
+              $('#c_preview').show();
+            },
+            error: function(error) {
+              console.log('Error:', error);
+              alert('Ada masalah saat mengambil data soal')
+            }
+          });
+        }
+      }
+
+      function sesuaikanUlang(){
+        $('#c_form').show();
+        $('#c_preview').hide();
+      }
+
+      function buatKuis(){
+
+        var postData = {
+            "nama": $nama,
+            "tanggal": $tanggal,
+            "deskripsi": $deskripsi,
+            "jumlah_soal": $jumlah_soal,
+            "kesulitan_id": $kesulitan_id,
+            "kelas_matkul_kode": 1,
+            "materi": $materi_selected
+          };
+
+          console.log(postData);
+
+          $.ajax({
+            url: '/api/ujian',
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify(postData),
+            success: function(response) {
+              swal({
+                title: "Sukses Membuat Ujian Baru!",
+                text: "Data ujian baru telah berhasil disimpan ke database",
+                icon: "success",
+                showCancelButton: false,
+                confirmButtonText: 'OK',
+              })
+              .then((result) => {
+                if (result) {
+                  location.reload(true);
+                } 
+              });
+            },
+            error: function(error) {
+              console.log('Error:', error);
+              alert('Ada masalah saat menyimpan data ujian baru')
+            }
+          });
+      }
+
+      function oChangeMateri(id){
+        $idCheckbox = '#'+id;
+        var isChecked = $($idCheckbox).is(':checked');
+
+        if(isChecked){
+          $idContainer = '#c_'+id;
+          $($idContainer).append('<input class="mb_pers_materi" id="p_'+id+'" type="number">');
+        }else{
+          $idPersentase = '#p_'+id;
+          $($idPersentase).remove();
+        }
+      }
+
+      function formatDate(inputDate) {
+        var parts = inputDate.split('/');
+        var formattedDate = parts[2] + '-' + parts[0].padStart(2, '0') + '-' + parts[1].padStart(2, '0');
+        return formattedDate;
+      }
+  </script>
+
+</body>
+</html>
